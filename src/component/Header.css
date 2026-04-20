@@ -133,3 +133,204 @@
     display: none; /* Usually hidden on mobile in favor of the Explore menu */
   }
 }
+
+@media (max-width: 1024px) {
+  .header-wrapper {
+    padding: 10px; /* Outer padding kam kar di */
+  }
+
+  .header-container {
+    padding: 10px 15px;
+    border-radius: 12px;
+  }
+
+  .nav-menu {
+    display: none; /* Desktop menu hide */
+  }
+}
+
+/* Mobile (Below 768px) */
+@media (max-width: 768px) {
+  .logo-main {
+    font-size: 20px; /* Logo thoda chhota */
+  }
+
+  .logo-sub {
+    font-size: 7px;
+    letter-spacing: 0.5px;
+  }
+
+  .header-actions {
+    gap: 8px; /* Buttons ke beech ki jagah kam ki */
+  }
+
+  .apply-now-btn {
+    padding: 8px 15px; /* Button chhota kiya */
+    font-size: 13px;
+  }
+
+  .explore-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  .explore-btn .hamburger {
+    gap: 2px;
+  }
+  
+  .hamburger span {
+    width: 15px; /* Hamburger icon size adjust */
+  }
+}
+
+/* Extra Small Mobile (Below 480px) - iPhone Mini/Small Androids */
+@media (max-width: 480px) {
+  .header-container {
+    padding: 8px 10px;
+  }
+
+  .logo-section {
+    gap: 6px;
+  }
+
+  .logo-main {
+    font-size: 18px;
+  }
+
+  /* Mobile par "Apply Now" ka arrow hide kar sakte hain space bachane ke liye */
+  .apply-now-btn .arrow {
+    display: none; 
+  }
+
+  .apply-now-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .explore-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+:root {
+  --primary-red: #c55a4e;
+  --text-dark: #4a2c2a;
+  --bg-blue: #f1f5f9;
+}
+
+.header-wrapper {
+  padding: 15px 20px;
+  position: fixed; /* Sticky top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.logo-section .logo-main { font-size: 24px; font-weight: 800; color: var(--text-dark); display: block; line-height: 1; }
+.logo-section .logo-sub { font-size: 8px; font-weight: 600; letter-spacing: 1px; color: var(--text-dark); }
+
+/* Nav Menu Desktop */
+.nav-menu { display: flex; gap: 20px; }
+.nav-link { text-decoration: none; font-size: 14px; font-weight: 600; color: #333; }
+.nav-link.active { color: var(--primary-red); }
+
+/* Buttons General */
+.header-actions { display: flex; gap: 12px; }
+
+.apply-now-btn {
+  background: var(--primary-red);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.explore-btn {
+  background: var(--bg-blue);
+  color: #2c3e50;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #2c3e50;
+  margin: 3px 0;
+}
+
+/* --- MOBILE VERSION (Breakpoint) --- */
+
+@media (max-width: 768px) {
+  .header-wrapper {
+    padding: 10px; /* Outer margin kam kiya */
+  }
+
+  .header-container {
+    padding: 10px 15px; /* Inner padding mobile ke liye */
+  }
+
+  .nav-menu {
+    display: none; /* Desktop Links gayab */
+  }
+
+  /* Buttons ko Icon-Only banane ka logic */
+  .btn-text {
+    display: none; /* "Apply Now" aur "Explore" text hide ho jayega */
+  }
+
+  .apply-now-btn {
+    width: 45px; /* Square shape */
+    height: 45px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .apply-now-btn .arrow {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .explore-btn {
+    width: 45px; /* Square shape */
+    height: 45px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .explore-btn .hamburger {
+    margin: 0;
+  }
+  
+  .logo-main {
+    font-size: 20px; /* Mobile par logo chota */
+  }
+}

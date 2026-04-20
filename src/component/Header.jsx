@@ -7,31 +7,31 @@ const Header = () => {
       <div className="header-container">
         {/* Logo Section */}
         <div className="logo-section">
-          {/* <img 
-            // src="https://via.placeholder.com/40" 
-            alt="SAI Logo" 
-            className="logo-icon" 
-          /> */}
-          <div className="logo-text">
-            <span className="logo-main">SAI</span>
-            <span className="logo-sub">INTERNATIONAL SCHOOL</span>
+          <div className="logo-placeholder">
+             {/* Replace with your logo <img> */}
+             <div className="logo-icon-img"></div> 
+             <div className="logo-text">
+                <span className="logo-main">SAI</span>
+                <span className="logo-sub">INTERNATIONAL SCHOOL</span>
+             </div>
           </div>
         </div>
 
-        {/* Navigation Links */}
+        {/* Desktop Nav - Hidden on Mobile */}
         <nav className="nav-menu">
-          <a href="#home" className="nav-link active">Home</a>
-          <a href="#about" className="nav-link">About Us</a>
-          <a href="#tour" className="nav-link">Virtual Tour</a>
-          <a href="#news" className="nav-link">News & Blogs</a>
-          <a href="#pay" className="nav-link">Pay Fee</a>
-          <a href="#reach" className="nav-link">Reach Us</a>
+          <a href="#" className="nav-link active">Home</a>
+          <a href="#" className="nav-link">About Us</a>
+          <a href="#" className="nav-link">Virtual Tour</a>
+          <a href="#" className="nav-link">News & Blogs</a>
+          <a href="#" className="nav-link">Pay Fee</a>
+          <a href="#" className="nav-link">Reach Us</a>
         </nav>
 
-        {/* Action Buttons */}
+        {/* Action Buttons - Responsive Icons */}
         <div className="header-actions">
           <button className="apply-now-btn">
-            Apply Now <span className="arrow">↗</span>
+            <span className="btn-text">Apply Now</span>
+            <span className="arrow">↗</span>
           </button>
           
           <button className="explore-btn">
@@ -40,7 +40,7 @@ const Header = () => {
               <span></span>
               <span></span>
             </div>
-            Explore
+            <span className="btn-text">Explore</span>
           </button>
         </div>
       </div>
