@@ -1,0 +1,135 @@
+:root {
+  --primary-red: #c55a4e;
+  --text-dark: #2c3e50;
+  --bg-light: #f8fafc;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header-wrapper {
+  padding: 20px;
+  background-color: transparent; /* Assuming it sits on a background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  border: 1px solid #f0f0f0;
+}
+
+/* Logo Styling */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-main {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  color: #4a2c2a;
+  line-height: 1;
+}
+
+.logo-sub {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #4a2c2a;
+  font-weight: 600;
+}
+
+/* Nav Links */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-link.active {
+  color: var(--primary-red);
+}
+
+.nav-link:hover {
+  color: var(--primary-red);
+}
+
+/* Action Buttons */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.apply-now-btn {
+  background-color: var(--primary-red);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.apply-now-btn:hover {
+  background-color: #b04e43;
+  transform: translateY(-1px);
+}
+
+.explore-btn {
+  background-color: #f1f5f9;
+  color: var(--text-dark);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #e2e8f0;
+}
+
+/* Hamburger Icon CSS */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: var(--text-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .nav-menu {
+    display: none; /* Usually hidden on mobile in favor of the Explore menu */
+  }
+}
